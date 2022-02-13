@@ -19,7 +19,7 @@ jobs:
         run: |
           bin/rubocop --parallel
 
-  tests:
+  builds:
     name: Tests
     runs-on: ubuntu-latest
 
