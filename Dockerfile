@@ -25,7 +25,7 @@ RUN apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get -yq dist-upgrad
   DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends \
     libpq-dev \
     nodejs \
-    yarn \
+    yarn && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
     truncate -s 0 /var/log/*log
