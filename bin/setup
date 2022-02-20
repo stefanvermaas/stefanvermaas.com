@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+puts "[bin/setup] Installing all ruby dependencies."
+system("bundle check") || system("bundle install")
+
+puts "[bin/setup] Installing all javascript dependencies."
+system "yarn"
