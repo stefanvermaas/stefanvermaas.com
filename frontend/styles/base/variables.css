@@ -1,0 +1,17 @@
+/*------------------------------------*\
+    Variables
+\*------------------------------------*/
+
+:root {
+  --cello-300-color: #273140;
+  --cello-200-color: #3C475C;
+  --cello-100-color: #768195;
+
+  --heather-300-color: #9CA4B4;
+  --heather-200-color: #B7BDC9;
+  --heather-100-color: #D5DAE3;
+
+  --porcelain-300-color: #EEF3F8;
+  --porcelain-200-color: #FAFBFC;
+  --porcelain-100-color: #FFFFFF;
+}

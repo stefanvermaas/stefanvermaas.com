@@ -1,0 +1,10 @@
+/*------------------------------------*\
+    Typography
+\*------------------------------------*/
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: var(--cello-200-color);
+}
+
+p { font-size: 1rem; }
