@@ -1,0 +1,11 @@
+/*------------------------------------*\
+    Body
+\*------------------------------------*/
+
+::selection {
+  background-color: var(--selection-color);
+}
+
+body {
+  background-color: var(--body-color);
+}

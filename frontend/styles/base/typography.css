@@ -7,4 +7,22 @@ body {
   color: var(--cello-200-color);
 }
 
-p { font-size: 1rem; }
+h1, h2,
+h3, h4,
+h5, h6,
+p {
+  color: var(--text-color);
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+a { color: var(--link-color); }
+p { font-size: 1.25rem; }
+
+p:last-of-type {
+  margin-bottom: 0;
+}
