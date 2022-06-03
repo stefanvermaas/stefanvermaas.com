@@ -3,15 +3,41 @@
 \*------------------------------------*/
 
 :root {
-  --cello-300-color: #273140;
-  --cello-200-color: #3C475C;
-  --cello-100-color: #768195;
+  --cello-300-color: hsl(216, 24%, 20%);
+  --cello-200-color: hsl(219, 21%, 30%);
+  --cello-100-color: hsl(219, 13%, 52%);
 
-  --heather-300-color: #9CA4B4;
-  --heather-200-color: #B7BDC9;
-  --heather-100-color: #D5DAE3;
+  --heather-300-color: hsl(220, 14%, 66%);
+  --heather-200-color: hsl(220, 14%, 75%);
+  --heather-100-color: hsl(219, 20%, 86%);
 
-  --porcelain-300-color: #EEF3F8;
-  --porcelain-200-color: #FAFBFC;
-  --porcelain-100-color: #FFFFFF;
+  --porcelain-300-color: hsl(210, 42%, 95%);
+  --porcelain-200-color: hsl(210, 25%, 98%);
+  --porcelain-100-color: hsl(0, 0%, 100%);
+
+  --mango-100-color: hsl(36, 100%, 92%);
+  --mango-200-color: hsl(36, 100%, 75%);
+
+  --body-color: var(--porcelain-100-color);
+  --text-color: var(--cello-300-color);
+  --link-color: var(--cello-200-color);
+  --selection-color: var(--mango-100-color);
+
+  /* Brand colors */
+  --known-decimal-color: hsl(48, 100%, 48%);
+  --ruby-on-rails-color: hsl(360, 100%, 41%);
+  --nedap-color: hsl(16, 100%, 61%);
+  --airbnb-color: hsl(349, 100%, 61%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-color: var(--cello-300-color);
+    --text-color: var(--porcelain-100-color);
+    --link-color: var(--porcelain-200-color);
+    --selection-color: var(--mango-200-color);
+
+    /* Brand colors */
+    --known-decimal-color: hsl(49, 98%, 51%);
+  }
 }
