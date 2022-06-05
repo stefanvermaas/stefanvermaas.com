@@ -4,7 +4,7 @@ This is the source for my personal website, [stefanvermaas.com](https://www.stef
 
 ## Getting started
 
-To run and built the site locally, you'll need to have Ruby and NodeJS installed. To install Ruby, I recommend using [rbenv](https://github.com/rbenv/rbenv#installation). To install NodeJS, I recommend using [nodenv](https://github.com/nodenv/nodenv#installation)
+To run and built the site locally, you'll need to have Ruby and NodeJS installed. To install Ruby, I recommend using [rbenv](https://github.com/rbenv/rbenv#installation). To install NodeJS, I recommend using [nodenv](https://github.com/nodenv/nodenv#installation).
 
 1. Clone the repository and navigate into it.
 2. Run `bundle` to install Ruby dependencies.
