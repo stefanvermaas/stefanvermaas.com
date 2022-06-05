@@ -22,23 +22,11 @@ header a {
   text-decoration: none;
 }
 
-/* Profile picture, name, etc. */
-header > a {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 0.5rem;
-}
-
+/* Profile picture */
 header > a img {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-}
-
-header > a span {
-  font-weight: 700;
-  font-size: 1.25rem;
 }
 
 /* Navigation */
