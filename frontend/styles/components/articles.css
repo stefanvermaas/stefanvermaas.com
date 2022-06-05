@@ -1,0 +1,38 @@
+/*------------------------------------*\
+    Articles
+\*------------------------------------*/
+
+ol.articles {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ol.articles li {
+  font-size: 1.15rem;
+}
+
+ol.articles li a,
+ol.articles li time {
+  display: inline-block;
+}
+
+ol.articles li a {
+  text-decoration: none;
+  padding: 0.25rem 0;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--heather-100-color);
+}
+
+ol.articles li a:hover {
+  text-decoration-style: solid;
+}
+
+ol.articles li time::after {
+  content: "-";
+  margin-left: 0.5rem;
+  margin-right: 0.25rem;
+}

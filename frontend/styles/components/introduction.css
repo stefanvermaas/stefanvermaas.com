@@ -2,12 +2,21 @@
     Introduction
 \*------------------------------------*/
 
+section.introduction {
+  margin-bottom: 2em;
+}
+
 section.introduction a {
   font-weight: 700;
+  text-decoration: none;
+}
+
+section.introduction a:hover {
   text-decoration: underline;
   text-decoration-style: wavy;
   text-decoration-thickness: 2px;
-  text-underline-offset: 0.4rem;
+  text-underline-offset: 0.25rem;
+  text-decoration-skip-ink: auto;
 }
 
 section.introduction a[href="https://www.knowndecimal.com"] {
