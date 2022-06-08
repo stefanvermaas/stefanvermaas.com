@@ -21,4 +21,4 @@ template_engine: erb
 timezone: America/New_York
 
 pagination:
-  enabled: true
+  enabled: false
