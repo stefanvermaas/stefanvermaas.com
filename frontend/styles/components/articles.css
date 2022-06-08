@@ -2,6 +2,7 @@
     Articles
 \*------------------------------------*/
 
+/* List of articles */
 ol.articles {
   list-style: none;
   margin: 0;
@@ -35,4 +36,18 @@ ol.articles li time::after {
   content: "-";
   margin-left: 0.5rem;
   margin-right: 0.25rem;
+}
+
+/* Article */
+article.article header {
+  margin-bottom: 1em;
+}
+
+article.article header h1 {
+  margin-bottom: 0.5rem;
+}
+
+article.article header time {
+  font-style: italic;
+  color: var(--heather-300-color);
 }
