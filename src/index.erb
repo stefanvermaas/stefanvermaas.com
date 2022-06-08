@@ -18,3 +18,16 @@ layout: site
     market and did my internship at <a href="https://www.airbnb.com" target="_blank">Airbnb</a>.
   </p>
 </section>
+
+<% if collections.posts.resources.any? %>
+  <h2>Writing</h2>
+
+  <ol class="articles">
+    <% collections.posts.resources.each do |post| %>
+      <li>
+        <time datetime="<%= post.date.to_date %>"><%= post.date.strftime('%e %b, %Y') %></time>
+        <a href="<%= post.relative_url %>"><%= post.data.title %></a>
+      </li>
+    <% end %>
+  </ol>
+<% end %>
