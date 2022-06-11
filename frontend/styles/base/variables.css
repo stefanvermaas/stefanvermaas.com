@@ -17,10 +17,11 @@
 
   --mango-100-color: hsl(36, 100%, 92%);
   --mango-200-color: hsl(36, 100%, 75%);
+  --mango-300-color: hsl(36, 100%, 39%);
 
   --body-color: var(--porcelain-100-color);
   --text-color: var(--cello-300-color);
-  --link-color: var(--cello-200-color);
+  --text-offset-color: var(--heather-100-color);
   --selection-color: var(--mango-100-color);
 
   /* Brand colors */
@@ -34,7 +35,7 @@
   :root {
     --body-color: var(--cello-300-color);
     --text-color: var(--porcelain-100-color);
-    --link-color: var(--porcelain-200-color);
+    --text-offset-color: var(--porcelain-300-color);
     --selection-color: var(--mango-200-color);
 
     /* Brand colors */

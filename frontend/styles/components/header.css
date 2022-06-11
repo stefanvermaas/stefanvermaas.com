@@ -2,7 +2,7 @@
     Header
 \*------------------------------------*/
 
-header {
+header[role="banner"] {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,24 +11,24 @@ header {
 }
 
 @media (min-width: 768px) {
-  header {
+  header[role="banner"] {
     padding-top: 3.125rem;
   }
 }
 
-header a {
+header[role="banner"] a {
   text-decoration: none;
 }
 
 /* Profile picture */
-header > a img {
+header[role="banner"] > a img {
   width: 48px;
   height: 48px;
   border-radius: 50%;
 }
 
 /* Navigation */
-header > nav ul {
+header[role="banner"] > nav ul {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -38,18 +38,14 @@ header > nav ul {
   margin: 0;
 }
 
-header > nav ul li a {
+header[role="banner"] > nav ul li a {
   display: inline-flex;
   align-items: center;
+  font-size: 1rem;
   padding: 0.5rem 0.25rem;
-  border-bottom: 2px dotted var(--heather-100-color);
 }
 
-header > nav ul li a:hover {
-  border-bottom-style: solid;
-}
-
-header > nav ul li a svg {
+header[role="banner"] > nav ul li a svg {
   width: 1rem;
   height: 1rem;
   margin-left: 0.25rem;

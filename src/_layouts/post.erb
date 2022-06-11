@@ -1,0 +1,15 @@
+---
+layout: site
+---
+
+<article class="article">
+  <header>
+    <h1><%= resource.data.title %></h1>
+
+    <time datetime="<%= resource.date.to_date %>">
+      <%= resource.date.strftime('%e %b, %Y') %>
+    </time>
+  </header>
+
+  <%= content %>
+</article>

@@ -4,5 +4,5 @@
 
 div.container {
   width: min(75ch, 100vw - 2rem);
-  margin: 1rem auto;
+  margin: 1rem auto 0 auto;
 }

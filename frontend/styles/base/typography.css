@@ -12,27 +12,70 @@ h3, h4,
 h5, h6,
 p {
   color: var(--text-color);
-  margin-bottom: 1em;
 }
 
 h1 {
   font-size: 2.25rem;
   line-height: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 h2 {
   font-size: 1.875rem;
+  font-weight: 500;
   line-height: 2.25rem;
+  margin-bottom: 0.875rem;
 }
 
 h3 {
   font-size: 1.5rem;
   line-height: 2rem;
+  margin-bottom: 0.75rem;
 }
 
-a { color: var(--link-color); }
-p { font-size: 1.25rem; }
+a {
+  color: var(--text-color);
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.25rem;
+  text-decoration-skip-ink: auto;
+  text-decoration-color: var(--text-offset-color);
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  margin-bottom: 1em;
+}
 
 p:last-of-type {
   margin-bottom: 0;
+}
+
+time {
+  font-style: italic;
+  color: var(--text-color);
+}
+
+ol,
+ol li,
+ul,
+ul li {
+  font-size: 1.25rem;
+  color: var(--text-color);
+}
+
+code {
+  padding: 5px 8px;
+  margin: 0 2px;
+  background-color: var(--mango-100-color);
+  border-radius: .15rem;
+  line-height: 1;
+}
+
+@media (prefers-color-scheme: dark) {
+  code {
+    color: var(--mango-300-color);
+  }
 }

@@ -9,7 +9,7 @@ layout: site
 
   <p>
     I currently work for <a href="https://www.knowndecimal.com" target="_blank">Known Decimal</a> on e-commerce software,
-    and am based out of Sønderborg, Denmark. I love building products in <a href="https://www.ruby-lang.org" target="_blank">Ruby</a>
+    and am based out of Europe. I love building products in <a href="https://www.ruby-lang.org" target="_blank">Ruby</a>
     and <a href="https://www.rubyonrails.org" target="_blank">Rails</a>, and have been building on the web for over 10 years.
   </p>
 
@@ -18,3 +18,16 @@ layout: site
     market and did my internship at <a href="https://www.airbnb.com" target="_blank">Airbnb</a>.
   </p>
 </section>
+
+<% if collections.posts.resources.any? %>
+  <h2>Writing</h2>
+
+  <ol class="articles">
+    <% collections.posts.resources.each do |post| %>
+      <li>
+        <time datetime="<%= post.date.to_date %>"><%= post.date.strftime('%e %b, %Y') %></time>
+        <a href="<%= post.relative_url %>"><%= post.data.title %></a>
+      </li>
+    <% end %>
+  </ol>
+<% end %>

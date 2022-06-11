@@ -1,0 +1,44 @@
+/*------------------------------------*\
+    Articles
+\*------------------------------------*/
+
+/* List of articles */
+ol.articles {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ol.articles li {
+  font-size: 1.15rem;
+  line-height: 1.5rem;
+}
+
+ol.articles li a,
+ol.articles li time {
+  display: inline-block;
+}
+
+ol.articles li a {
+  padding: 0.25rem 0;
+}
+
+ol.articles li time,
+ol.articles li time::after {
+  color: var(--text-color);
+}
+
+ol.articles li time::after {
+  content: "-";
+  margin-left: 0.5rem;
+  margin-right: 0.25rem;
+}
+
+/* Article */
+article.article header {
+  margin-bottom: 1em;
+}
+
+article.article header h1 {
+  margin-bottom: 0.5rem;
+}
