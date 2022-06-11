@@ -41,12 +41,8 @@ header[role="banner"] > nav ul {
 header[role="banner"] > nav ul li a {
   display: inline-flex;
   align-items: center;
+  font-size: 1rem;
   padding: 0.5rem 0.25rem;
-  border-bottom: 2px dotted var(--heather-100-color);
-}
-
-header[role="banner"] > nav ul li a:hover {
-  border-bottom-style: solid;
 }
 
 header[role="banner"] > nav ul li a svg {

@@ -8,4 +8,5 @@
 
 body {
   background-color: var(--body-color);
+  padding-bottom: 3rem;
 }

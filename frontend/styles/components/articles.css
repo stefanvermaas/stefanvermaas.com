@@ -11,6 +11,7 @@ ol.articles {
 
 ol.articles li {
   font-size: 1.15rem;
+  line-height: 1.5rem;
 }
 
 ol.articles li a,
@@ -19,17 +20,12 @@ ol.articles li time {
 }
 
 ol.articles li a {
-  text-decoration: none;
   padding: 0.25rem 0;
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
-  text-decoration-color: var(--heather-100-color);
 }
 
-ol.articles li a:hover {
-  text-decoration-style: solid;
+ol.articles li time,
+ol.articles li time::after {
+  color: var(--text-color);
 }
 
 ol.articles li time::after {
@@ -45,9 +41,4 @@ article.article header {
 
 article.article header h1 {
   margin-bottom: 0.5rem;
-}
-
-article.article header time {
-  font-style: italic;
-  color: var(--heather-300-color);
 }
