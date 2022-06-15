@@ -13,7 +13,7 @@ group :development do
 end
 
 group :bridgetown_plugins do
+  gem 'bridgetown-feed', '~> 2.1' # A Bridgetown plugin to generate an Atom feed of your Bridgetown posts
   gem 'bridgetown-seo-tag', '~> 5.0' # A Bridgetown plugin to add metadata tags for search engines and social networks
   gem 'bridgetown-svg-inliner', '~> 1.0', '>= 1.0.2' # Liquid and ERB helper for Bridgetown to inline SVG files within HTML
-  gem 'bridgetown-feed', '~> 2.1' # A Bridgetown plugin to generate an Atom feed of your Bridgetown posts
 end
