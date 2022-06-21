@@ -23,10 +23,16 @@ To connect your Bridgetown site to Digital Ocean, you'll need to create an app o
 4. Select the "auto-deploy" feature.
 5. Click "Next" to review your app.
 
-Now, Digital Ocean will automatically try to guess what type of app you're adding. It will falsely claim your static site is a "Web Service" as we're using Ruby. To fix this, edit the app and make the following changes:
+## Finetuning Docker for the App Platform
 
-1. Change the "Resource Type" to "Static Site".
-2. Change the "Output Dir" to `/app/output`.
+Now, Digital Ocean will automatically try to guess what type of app you're adding. As we're both adding a `Dockerfile` and a Ruby application, Digital Ocean added two services.
+
+To address this, edit the app and make the following changes:
+
+1. Remove the "Ruby service" that was added.
+2. Edit the "Docker service".
+3. Change the "Resource Type" of the Docker service to "Static Site".
+4. Change the "Output Dir" of the Docker service to `/app/output`.
 
 Now, click on "Back" and finish the process of setting up your app. After completion, Digital Ocean will deploy your Bridgetown site to their App Platform (for free).
 
