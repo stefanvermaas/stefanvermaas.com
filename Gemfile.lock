@@ -85,6 +85,7 @@ GEM
       activesupport (>= 5.0.0, < 8.0)
     i18n (1.10.0)
       concurrent-ruby (~> 1.0)
+    json (2.6.2)
     kramdown (2.4.0)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -120,7 +121,8 @@ GEM
     roda (3.56.0)
       rack
     rouge (3.29.0)
-    rubocop (1.31.0)
+    rubocop (1.31.1)
+      json (~> 2.3)
       parallel (~> 1.10)
       parser (>= 3.1.0.0)
       rainbow (>= 2.2.2, < 4.0)
