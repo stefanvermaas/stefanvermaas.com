@@ -1,6 +1,6 @@
 # stefanvermaas.com
 
-This is the source for my personal website, [stefanvermaas.com](https://www.stefanvermaas.com). It is built with [Bridgetown](http://www.bridgetownrb.com), a static site generator. It is automatically deployed and hosted on [Digital Ocean](https://m.do.co/c/e9be0e3d8537).
+This is the source for my personal website, [stefanvermaas.com](https://www.stefanvermaas.com). It is built with [Bridgetown](http://www.bridgetownrb.com), a static site generator. It is automatically deployed to and hosted on a VPS at [TransIP](https://www.transip.nl).
 
 ## Getting started
 
