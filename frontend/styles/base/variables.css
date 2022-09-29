@@ -29,6 +29,7 @@
   --ruby-on-rails-color: hsl(360, 100%, 41%);
   --nedap-color: hsl(16, 100%, 61%);
   --airbnb-color: hsl(349, 100%, 61%);
+  --revue-color: hsl(19, 81%, 49%);
 }
 
 @media (prefers-color-scheme: dark) {
