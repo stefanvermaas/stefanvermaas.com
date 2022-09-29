@@ -1,0 +1,26 @@
+<section class="newsletter">
+  <div class="newsletter__intro">
+    <h3>Stay in the loop</h3>
+
+    <p>
+      Want to get a notification when new content arrives? Subscribe to my "newsletter"
+      below or subscribe to the <%= link_to "RSS feed", "/feed.xml", target: "_blank" %>.
+    </p>
+  </div>
+
+  <form action="https://www.getrevue.co/profile/stefanvermaas/add_subscriber" method="post" name="revue-form" target="_blank">
+    <div class="newsletter__form-group">
+      <label for="member_email">Email address</label>
+      <input class="newsletter__form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email" />
+    </div>
+
+    <input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit" />
+  </form>
+
+  <footer>
+    <p>
+      By subscribing, you agree with Revue's <a target="_blank" href="https://www.getrevue.co/terms">Terms of Service</a>
+      and <a target="_blank" href="https://www.getrevue.co/privacy">Privacy Policy</a>.
+    </p>
+  </footer>
+</section>
