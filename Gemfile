@@ -8,7 +8,7 @@ ruby File.read('.ruby-version').strip
 gem 'bridgetown', '~> 1.1.0'
 
 group :development do
-  gem 'puma', '~> 5.6' # Puma is a Rack-compatible server used by Bridgetown
+  gem 'puma', '~> 6.0' # Puma is a Rack-compatible server used by Bridgetown
   gem 'rubocop', '~> 1.36' # RuboCop is a Ruby code style checking and code formatting tool.
 end
 
