@@ -118,7 +118,7 @@ GEM
     roda (3.58.0)
       rack
     rouge (3.29.0)
-    rubocop (1.37.1)
+    rubocop (1.38.0)
       json (~> 2.3)
       parallel (~> 1.10)
       parser (>= 3.1.2.1)
@@ -155,7 +155,7 @@ DEPENDENCIES
   bridgetown-seo-tag (~> 5.0)
   bridgetown-svg-inliner (~> 1.0, >= 1.0.2)
   puma (~> 6.0)
-  rubocop (~> 1.37)
+  rubocop (~> 1.38)
 
 RUBY VERSION
    ruby 3.1.2p20
