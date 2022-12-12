@@ -9,7 +9,7 @@ gem 'bridgetown', '~> 1.1.0'
 
 group :development do
   gem 'puma', '~> 6.0' # Puma is a Rack-compatible server used by Bridgetown
-  gem 'rubocop', '~> 1.39' # RuboCop is a Ruby code style checking and code formatting tool.
+  gem 'rubocop', '~> 1.40' # RuboCop is a Ruby code style checking and code formatting tool.
 end
 
 group :bridgetown_plugins do
