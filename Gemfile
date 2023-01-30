@@ -5,7 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby File.read('.ruby-version').strip
 
-gem 'bridgetown', '~> 1.1.0'
+gem 'bridgetown', '~> 1.2.0'
 
 group :development do
   gem 'puma', '~> 6.0' # Puma is a Rack-compatible server used by Bridgetown
