@@ -11,5 +11,5 @@ Bridgetown.configure do |config|
 
   init :"bridgetown-feed"
   init :"bridgetown-seo-tag"
-  init :"bridgetown-sitemap"
+  init :"bridgetown-svg-inliner"
 end
