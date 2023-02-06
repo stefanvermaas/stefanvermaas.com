@@ -14,11 +14,5 @@
 # https://learnxinyminutes.com/docs/yaml/
 #
 
-url: "https://www.stefanvermaas.com"
-
-permalink: pretty
-template_engine: erb
-timezone: America/New_York
-
 pagination:
   enabled: false
