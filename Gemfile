@@ -13,5 +13,5 @@ gem 'bridgetown-svg-inliner', '~> 2.0' # Liquid and ERB helper for Bridgetown to
 
 group :development do
   gem 'puma', '~> 6.1' # Puma is a Rack-compatible server used by Bridgetown
-  gem 'rubocop', '~> 1.46' # RuboCop is a Ruby code style checking and code formatting tool.
+  gem 'rubocop', '~> 1.48' # RuboCop is a Ruby code style checking and code formatting tool.
 end
