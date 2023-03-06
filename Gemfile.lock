@@ -117,7 +117,7 @@ GEM
     roda (3.64.0)
       rack
     rouge (3.30.0)
-    rubocop (1.46.0)
+    rubocop (1.48.0)
       json (~> 2.3)
       parallel (~> 1.10)
       parser (>= 3.2.0.0)
@@ -127,9 +127,9 @@ GEM
       rubocop-ast (>= 1.26.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 3.0)
-    rubocop-ast (1.26.0)
+    rubocop-ast (1.27.0)
       parser (>= 3.2.1.0)
-    ruby-progressbar (1.11.0)
+    ruby-progressbar (1.13.0)
     ruby2_keywords (0.0.5)
     serbea (1.0.1)
       activesupport (>= 6.0)
@@ -152,7 +152,7 @@ DEPENDENCIES
   bridgetown-seo-tag (~> 6.0)
   bridgetown-svg-inliner (~> 2.0)
   puma (~> 6.1)
-  rubocop (~> 1.46)
+  rubocop (~> 1.48)
 
 RUBY VERSION
    ruby 3.1.2p20
