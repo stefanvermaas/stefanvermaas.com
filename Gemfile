@@ -12,6 +12,6 @@ gem 'bridgetown-seo-tag', '~> 6.0' # A Bridgetown plugin to add metadata tags fo
 gem 'bridgetown-svg-inliner', '~> 2.0' # Liquid and ERB helper for Bridgetown to inline SVG files within HTML
 
 group :development do
-  gem 'puma', '~> 6.1' # Puma is a Rack-compatible server used by Bridgetown
+  gem 'puma', '~> 6.2' # Puma is a Rack-compatible server used by Bridgetown
   gem 'rubocop', '~> 1.49' # RuboCop is a Ruby code style checking and code formatting tool.
 end
