@@ -36,7 +36,7 @@ h3 {
 a {
   color: var(--text-color);
   text-decoration: underline;
-  text-decoration-style: wavy;
+  text-decoration-style: solid;
   text-decoration-thickness: 2px;
   text-underline-offset: 0.25rem;
   text-decoration-skip-ink: auto;

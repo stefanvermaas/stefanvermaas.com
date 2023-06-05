@@ -11,6 +11,11 @@ section.introduction a {
   text-decoration-color: inherit;
 }
 
+section.introduction a[href="https://www.codeture.nl"] {
+  color: var(--codeture-dark-color);
+  text-decoration-color: var(--codeture-color);
+}
+
 section.introduction a[href="https://www.knowndecimal.com"] {
   color: var(--known-decimal-color);
 }
