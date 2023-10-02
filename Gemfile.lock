@@ -99,7 +99,7 @@ GEM
     roda (3.71.0)
       rack
     rouge (3.30.0)
-    rubocop (1.56.3)
+    rubocop (1.56.4)
       base64 (~> 0.1.1)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
@@ -123,7 +123,7 @@ GEM
     tilt (2.2.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    unicode-display_width (2.4.2)
+    unicode-display_width (2.5.0)
     zeitwerk (2.6.11)
 
 PLATFORMS
