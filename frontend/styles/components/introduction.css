@@ -16,6 +16,13 @@ section.introduction a[href="https://www.codeture.nl"] {
   text-decoration-color: var(--codeture-color);
 }
 
+@media (prefers-color-scheme: dark) {
+  section.introduction a[href="https://www.codeture.nl"] {
+    color: var(--codeture-color);
+    text-decoration-color: var(--codeture-color);
+  }
+}
+
 section.introduction a[href="https://www.knowndecimal.com"] {
   color: var(--known-decimal-color);
 }
