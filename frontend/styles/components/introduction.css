@@ -11,32 +11,32 @@ section.introduction a {
   text-decoration-color: inherit;
 }
 
-section.introduction a[href="https://www.codeture.nl"] {
+section.introduction a[href*="https://www.codeture.nl"] {
   color: var(--codeture-dark-color);
   text-decoration-color: var(--codeture-color);
 }
 
 @media (prefers-color-scheme: dark) {
-  section.introduction a[href="https://www.codeture.nl"] {
+  section.introduction a[href*="https://www.codeture.nl"] {
     color: var(--codeture-color);
     text-decoration-color: var(--codeture-color);
   }
 }
 
-section.introduction a[href="https://www.knowndecimal.com"] {
+section.introduction a[href*="https://www.knowndecimal.com"] {
   color: var(--known-decimal-color);
 }
 
-section.introduction a[href="https://www.ruby-lang.org"],
-section.introduction a[href="https://www.rubyonrails.org"] {
+section.introduction a[href*="https://www.ruby-lang.org"],
+section.introduction a[href*="https://www.rubyonrails.org"] {
   color: var(--ruby-on-rails-color);
 }
 
-section.introduction a[href="https://www.nedap.com"] {
+section.introduction a[href*="https://www.nedap.com"] {
   color: var(--nedap-color);
 }
 
-section.introduction a[href="https://www.airbnb.com"] {
+section.introduction a[href*="https://www.airbnb.com"] {
   color: var(--airbnb-color);
 }
 
