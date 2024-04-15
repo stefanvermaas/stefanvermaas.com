@@ -74,7 +74,7 @@ GEM
       activesupport (>= 5.0.0, < 8.0)
     i18n (1.14.4)
       concurrent-ruby (~> 1.0)
-    json (2.7.1)
+    json (2.7.2)
     kramdown (2.4.0)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -112,7 +112,7 @@ GEM
     roda (3.78.0)
       rack
     rouge (4.2.1)
-    rubocop (1.62.1)
+    rubocop (1.63.1)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
@@ -147,7 +147,7 @@ DEPENDENCIES
   bridgetown-seo-tag (~> 6.0)
   bridgetown-svg-inliner (~> 2.0)
   puma (~> 6.4)
-  rubocop (~> 1.62)
+  rubocop (~> 1.63)
 
 RUBY VERSION
    ruby 3.3.0p0
