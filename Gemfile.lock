@@ -113,7 +113,7 @@ GEM
     roda (3.79.0)
       rack
     rouge (4.2.1)
-    rubocop (1.66.1)
+    rubocop (1.67.0)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
@@ -135,7 +135,7 @@ GEM
     tilt (2.3.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    unicode-display_width (2.5.0)
+    unicode-display_width (2.6.0)
     uri (0.13.0)
     zeitwerk (2.6.13)
 
@@ -148,7 +148,7 @@ DEPENDENCIES
   bridgetown-seo-tag (~> 6.0)
   bridgetown-svg-inliner (~> 2.0)
   puma (~> 6.4)
-  rubocop (~> 1.66)
+  rubocop (~> 1.67)
 
 RUBY VERSION
    ruby 3.3.0p0
