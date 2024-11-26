@@ -89,7 +89,7 @@ GEM
     mutex_m (0.2.0)
     net-http (0.4.1)
       uri
-    nio4r (2.7.3)
+    nio4r (2.7.4)
     nokogiri (1.16.5)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
@@ -98,7 +98,7 @@ GEM
       ast (~> 2.4.1)
       racc
     public_suffix (5.0.5)
-    puma (6.4.3)
+    puma (6.5.0)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.0.10)
@@ -147,7 +147,7 @@ DEPENDENCIES
   bridgetown-feed (~> 3.1)
   bridgetown-seo-tag (~> 6.0)
   bridgetown-svg-inliner (~> 2.0)
-  puma (~> 6.4)
+  puma (~> 6.5)
   rubocop (~> 1.68)
 
 RUBY VERSION
