@@ -74,12 +74,13 @@ GEM
       activesupport (>= 5.0.0, < 8.0)
     i18n (1.14.4)
       concurrent-ruby (~> 1.0)
-    json (2.10.0)
+    json (2.10.1)
     kramdown (2.4.0)
       rexml
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     language_server-protocol (3.17.0.4)
+    lint_roller (1.1.0)
     liquid (5.4.0)
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -113,9 +114,10 @@ GEM
     roda (3.79.0)
       rack
     rouge (4.2.1)
-    rubocop (1.71.2)
+    rubocop (1.72.1)
       json (~> 2.3)
-      language_server-protocol (>= 3.17.0)
+      language_server-protocol (~> 3.17.0.2)
+      lint_roller (~> 1.1.0)
       parallel (~> 1.10)
       parser (>= 3.3.0.2)
       rainbow (>= 2.2.2, < 4.0)
@@ -150,7 +152,7 @@ DEPENDENCIES
   bridgetown-seo-tag (~> 6.0)
   bridgetown-svg-inliner (~> 2.0)
   puma (~> 6.6)
-  rubocop (~> 1.71)
+  rubocop (~> 1.72)
 
 RUBY VERSION
    ruby 3.3.0p0
