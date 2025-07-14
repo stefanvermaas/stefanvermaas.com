@@ -115,7 +115,7 @@ GEM
     roda (3.79.0)
       rack
     rouge (4.2.1)
-    rubocop (1.77.0)
+    rubocop (1.78.0)
       json (~> 2.3)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.1.0)
@@ -154,7 +154,7 @@ DEPENDENCIES
   bridgetown-seo-tag (~> 6.0)
   bridgetown-svg-inliner (~> 2.0)
   puma (~> 6.6)
-  rubocop (~> 1.77)
+  rubocop (~> 1.78)
 
 RUBY VERSION
    ruby 3.3.0p0
