@@ -8,7 +8,7 @@ ruby File.read('.ruby-version').strip
 gem 'bridgetown', '~> 1.3.4'
 
 gem 'bridgetown-feed', '~> 3.1' # A Bridgetown plugin to generate an Atom feed of your Bridgetown posts
-gem 'bridgetown-seo-tag', '~> 6.0' # A Bridgetown plugin to add metadata tags for search engines and social networks
+gem 'bridgetown-seo-tag', '~> 7.0' # A Bridgetown plugin to add metadata tags for search engines and social networks
 gem 'bridgetown-svg-inliner', '~> 2.0' # Liquid and ERB helper for Bridgetown to inline SVG files within HTML
 
 group :development do
