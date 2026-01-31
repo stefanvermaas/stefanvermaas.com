@@ -1,0 +1,48 @@
+---
+import Header from '../components/Header.astro';
+import '../styles/global.css';
+
+export interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = 'Stefan Vermaas', description = 'Ruby Engineer' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="author" content="Stefan Vermaas" />
+    
+    <title>{title}</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="icon" href="/images/favicon.ico" />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@stefanvermaas" />
+    <meta name="twitter:creator" content="@stefanvermaas" />
+    
+    <link rel="alternate" type="application/rss+xml" title="Stefan Vermaas" href="/rss.xml" />
+  </head>
+  <body>
+    <div class="container" role="document">
+      <Header />
+
+      <main id="main-content" role="main">
+        <slot />
+      </main>
+    </div>
+  </body>
+</html>

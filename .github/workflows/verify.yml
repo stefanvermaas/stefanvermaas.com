@@ -1,50 +1,23 @@
-
 name: Verify
 on: [push]
 
 jobs:
-  linters:
-    name: Linters
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Setup Ruby and install gems
-        uses: ruby/setup-ruby@v1
-        with:
-          bundler-cache: true
-
-      - name: Run linters
-        run: |
-          bin/rubocop --parallel
-
-  builds:
-    name: Tests
+  build:
+    name: Build Test
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
-      - name: Setup Ruby and install gems
-        uses: ruby/setup-ruby@v1
-        with:
-          bundler-cache: true
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version-file: ".node-version"
-          cache: "yarn"
+          node-version: "24"
+          cache: "npm"
 
       - name: Install packages
-        run: |
-          yarn install --pure-lockfile
-          sudo apt-get -yqq install libpq-dev
+        run: npm install
 
       - name: Test building process
-        env:
-          BRIDGETOWN_ENV: production
-        run: |
-          bin/bridgetown deploy
+        run: npm run build

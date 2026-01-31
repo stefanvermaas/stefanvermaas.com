@@ -1,0 +1,119 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+const sortedPosts = posts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<Layout>
+  <section class="introduction">
+    <h1>
+      Hi, I'm Stefan.
+    </h1>
+
+    <p>
+      I'm the founder of <a href="https://www.codeture.nl?ref=stefanvermaas.com" target="_blank">Codeture</a>,
+      and am based out of Europe. I love building sustainable software with <a href="https://www.ruby-lang.org" target="_blank">Ruby</a>
+      and <a href="https://www.rubyonrails.org" target="_blank">Rails</a>, and have been building
+      on the web for over 10 years.
+    </p>
+
+    <p>
+      Previously, I worked for <a href="https://www.knowndecimal.com" target="_blank">Known Decimal</a>,
+      <a href="https://www.nedap.com" target="_blank">Nedap</a>, and <a href="https://www.airbnb.com" target="_blank">Airbnb</a>.
+    </p>
+  </section>
+
+  {sortedPosts.length > 0 && (
+    <>
+      <h2>Writing</h2>
+
+      <ol class="articles" role="list">
+        {sortedPosts.map((post) => (
+          <li>
+            <time datetime={post.data.date.toISOString().split('T')[0]}>
+              {post.data.date.toLocaleDateString('en-US', {
+                day: 'numeric',
+                month: 'short',
+                year: 'numeric',
+              })}
+            </time>
+            <a href={`/blog/${post.slug}`}>{post.data.title}</a>
+          </li>
+        ))}
+      </ol>
+    </>
+  )}
+</Layout>
+
+<style>
+  section.introduction {
+    margin-bottom: 2em;
+  }
+
+  section.introduction a {
+    font-weight: 700;
+    text-decoration-color: inherit;
+  }
+
+  section.introduction a[href*="https://www.codeture.nl"] {
+    color: var(--codeture-dark-color);
+    text-decoration-color: var(--codeture-color);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    section.introduction a[href*="https://www.codeture.nl"] {
+      color: var(--codeture-color);
+      text-decoration-color: var(--codeture-color);
+    }
+  }
+
+  section.introduction a[href*="https://www.knowndecimal.com"] {
+    color: var(--known-decimal-color);
+  }
+
+  section.introduction a[href*="https://www.ruby-lang.org"],
+  section.introduction a[href*="https://www.rubyonrails.org"] {
+    color: var(--ruby-on-rails-color);
+  }
+
+  section.introduction a[href*="https://www.nedap.com"] {
+    color: var(--nedap-color);
+  }
+
+  section.introduction a[href*="https://www.airbnb.com"] {
+    color: var(--airbnb-color);
+  }
+
+  ol.articles {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  ol.articles li {
+    font-size: 1.15rem;
+    line-height: 1.5rem;
+  }
+
+  ol.articles li a,
+  ol.articles li time {
+    display: inline-block;
+  }
+
+  ol.articles li a {
+    padding: 0.25rem 0;
+  }
+
+  ol.articles li time,
+  ol.articles li time::after {
+    color: var(--text-color);
+  }
+
+  ol.articles li time::after {
+    content: "-";
+    margin-left: 0.5rem;
+    margin-right: 0.25rem;
+  }
+</style>

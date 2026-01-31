@@ -1,0 +1,223 @@
+/*------------------------------------*\
+    Global Stylesheet
+\*------------------------------------*/
+
+/**
+ * Variables
+ * ----------------------------------------------------------------------------
+ */
+
+:root {
+  --cello-300-color: hsl(216, 24%, 20%);
+  --cello-200-color: hsl(219, 21%, 30%);
+  --cello-100-color: hsl(219, 13%, 52%);
+
+  --heather-300-color: hsl(220, 14%, 66%);
+  --heather-200-color: hsl(220, 14%, 75%);
+  --heather-100-color: hsl(219, 20%, 86%);
+
+  --porcelain-300-color: hsl(210, 42%, 95%);
+  --porcelain-200-color: hsl(210, 25%, 98%);
+  --porcelain-100-color: hsl(0, 0%, 100%);
+
+  --mango-100-color: hsl(36, 100%, 92%);
+  --mango-200-color: hsl(36, 100%, 75%);
+  --mango-300-color: hsl(36, 100%, 39%);
+
+  --body-color: var(--porcelain-100-color);
+  --text-color: var(--cello-300-color);
+  --text-offset-color: var(--heather-100-color);
+  --selection-color: var(--mango-100-color);
+
+  /* Brand colors */
+  --codeture-color: hsl(97, 73%, 47%);
+  --codeture-dark-color: hsl(102, 73%, 10%);
+  --known-decimal-color: hsl(48, 100%, 48%);
+  --ruby-on-rails-color: hsl(360, 100%, 41%);
+  --nedap-color: hsl(16, 100%, 61%);
+  --airbnb-color: hsl(349, 100%, 61%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-color: var(--cello-300-color);
+    --text-color: var(--porcelain-100-color);
+    --text-offset-color: var(--porcelain-300-color);
+    --selection-color: var(--mango-200-color);
+
+    /* Brand colors */
+    --known-decimal-color: hsl(49, 98%, 51%);
+  }
+}
+
+/**
+ * Reset
+ * ----------------------------------------------------------------------------
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/**
+ * Typography
+ * ----------------------------------------------------------------------------
+ */
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: var(--cello-200-color);
+}
+
+h1, h2,
+h3, h4,
+h5, h6,
+p {
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.875rem;
+  font-weight: 500;
+  line-height: 2.25rem;
+  margin-bottom: 0.875rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.25rem;
+  text-decoration-skip-ink: auto;
+  text-decoration-color: var(--text-offset-color);
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  margin-bottom: 1em;
+}
+
+p:last-of-type {
+  margin-bottom: 0;
+}
+
+time {
+  font-style: italic;
+  color: var(--text-color);
+}
+
+ol,
+ol li,
+ul,
+ul li {
+  font-size: 1.25rem;
+  color: var(--text-color);
+}
+
+code {
+  padding: 5px 8px;
+  margin: 0 2px;
+  background-color: var(--mango-100-color);
+  border-radius: .15rem;
+  line-height: 1;
+}
+
+@media (prefers-color-scheme: dark) {
+  code {
+    color: var(--mango-300-color);
+  }
+}
+
+/**
+ * Layout
+ * ----------------------------------------------------------------------------
+ */
+
+::selection {
+  background-color: var(--selection-color);
+}
+
+body {
+  background-color: var(--body-color);
+  padding-bottom: 3rem;
+}
+
+div.container {
+  width: min(75ch, 100vw - 2rem);
+  margin: 1rem auto 0 auto;
+}

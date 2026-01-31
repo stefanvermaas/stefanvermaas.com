@@ -1,0 +1,88 @@
+---
+---
+
+<header role="banner">
+  <a href="/" title="Go to homepage" rel="home" aria-label="Go to homepage">
+    <picture>
+      <source srcset="/images/profile-picture.avif 1x, /images/profile-picture@2x.avif 2x" type="image/avif" />
+      <source srcset="/images/profile-picture.webp 1x, /images/profile-picture@2x.webp 2x" type="image/webp" />
+
+      <img
+        src="/images/profile-picture.png"
+        srcset="/images/profile-picture.png 1x, /images/profile-picture@2x.png 2x"
+        alt="A black and white picture of Stefan Vermaas"
+      />
+    </picture>
+  </a>
+
+  <nav role="navigation" tabindex="-1">
+    <ul>
+      <li>
+        <a href="/" title="">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="https://www.twitter.com/stefanvermaas" title="See my Twitter profile" target="_blank">
+          Twitter
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.github.com/stefanvermaas" title="See my Github profile" target="_blank">
+          Github
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  header[role="banner"] {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: 3.125rem;
+  }
+
+  @media (min-width: 768px) {
+    header[role="banner"] {
+      padding-top: 3.125rem;
+    }
+  }
+
+  header[role="banner"] a {
+    text-decoration: none;
+  }
+
+  header[role="banner"] > a img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+  }
+
+  header[role="banner"] > nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  header[role="banner"] > nav ul li a {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0.5rem 0.25rem;
+  }
+
+  header[role="banner"] > nav ul li a svg {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.25rem;
+  }
+</style>
