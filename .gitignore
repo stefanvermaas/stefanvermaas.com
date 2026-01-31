@@ -1,35 +1,29 @@
-# Bridgetown
-output
-.bridgetown-cache
-.bridgetown-metadata
-.bridgetown-webpack
+# build output
+dist/
 
-# Dependency folders
-node_modules
-bower_components
-vendor
+# generated types
+.astro/
 
-# Caches
-.sass-cache
-.npm
-.node_repl_history
+# dependencies
+node_modules/
 
-# Ignore bundler config.
-/.bundle
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# Ignore Byebug command history file.
-.byebug_history
-
-# dotenv environment variables file
+# environment variables
 .env
+.env.production
 
-# Mac files
+# macOS-specific files
 .DS_Store
 
+# JetBrains
+.idea/
+
 # Yarn
-yarn-error.log
-yarn-debug.log*
 .pnp/
 .pnp.js
-# Yarn Integrity file
 .yarn-integrity
