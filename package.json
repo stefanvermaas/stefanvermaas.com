@@ -12,6 +12,6 @@
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.17",
-    "astro": "^5.18.0"
+    "astro": "^6.1.1"
   }
 }
