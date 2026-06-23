@@ -12,7 +12,7 @@ export async function GET(context) {
     items: sortedPosts.map((post) => ({
       title: post.data.title,
       pubDate: post.data.date,
-      link: `/blog/${post.slug}/`,
+      link: `/blog/${post.id}/`,
     })),
   });
 }
